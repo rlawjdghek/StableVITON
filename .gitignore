@@ -1,2 +1,4 @@
 DATA
 *.ckpt
+*__pycache__*
+*.vscode*
