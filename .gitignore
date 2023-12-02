@@ -1,7 +1,2 @@
-./DATA
+DATA
 *.ckpt
-*.jpg
-*.png
-*.jpeg
-*.zip
-*.json
