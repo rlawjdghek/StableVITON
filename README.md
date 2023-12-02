@@ -10,10 +10,9 @@ This repository is the official implementation of [StableVITON]()
 ![teaser](assets/teaser.png)&nbsp;
 
 ## TODO List
-- [x] Inference Code
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
-- [x] Completed task title  
+- [x] Inference code
+- [x] Release model weights
+- [ ] Training code
 
 ## Environments
 ```bash
