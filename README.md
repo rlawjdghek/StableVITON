@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="assets/teaser-teaser_v2.drawio.png" height=500>
-</p>
-
-
 # StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On
 This repository is the official implementation of [StableVITON]()
 
@@ -12,7 +7,7 @@ This repository is the official implementation of [StableVITON]()
 
 [[Arxiv Paper]()]&nbsp;
 [[Website Page](https://rlawjdghek.github.io/StableVITON/)]&nbsp;
-![teaser](assets/method_overview2.png)&nbsp;
+![teaser](assets/teaser.png)&nbsp;
 
 ## Environments
 ```bash
