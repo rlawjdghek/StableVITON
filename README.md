@@ -1,8 +1,8 @@
 # StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On
-This repository is the official implementation of [StableVITON]()
+This repository is the official implementation of [StableVITON](arxiv link)
 
 > **StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On**<br>
-> Jeongho Kim, Gyojung Gu, Minho Park, Sunghyun Park, Jaegul Choo,
+> [Jeongho Kim](https://scholar.google.co.kr/citations?user=ucoiLHQAAAAJ&hl=ko), [Gyojung Gu](), [Minho Park](https://pmh9960.github.io/), [Sunghyun Park](https://psh01087.github.io/), [Jaegul Choo](https://sites.google.com/site/jaegulchoo/) 
 
 [[Arxiv Paper]()]&nbsp;
 [[Website Page](https://rlawjdghek.github.io/StableVITON/)]&nbsp;
@@ -10,8 +10,8 @@ This repository is the official implementation of [StableVITON]()
 ![teaser](assets/teaser.png)&nbsp;
 
 ## TODO List
-- [x] Inference code
-- [x] Release model weights
+- [x] ~~Inference code~~
+- [x] ~~Release model weights~~
 - [ ] Training code
 
 ## Environments
@@ -40,7 +40,7 @@ conda install -c anaconda ipython -y
 
 ## Weights and Data
 You can download the VITON-HD dataset from [here](https://github.com/shadow2496/VITON-HD).<br>
-You can download the pre-trained model at 512x384 resolution from [Download Link](구글 폼 링크). <br>
+To download the model weights, please fill the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdmAZL7J9_CBNhVuRqaL25UQuOYzL5zVJM0Q0cWi54rJFR1Vg/viewform?usp=sf_link) related to the consent.<br>
 The input data should include (1) agnostic-map (2) agnostic-mask (3) cloth (4) densepose. For testing VITONHD, the test dataset should be organized as follows:
 
 ```
@@ -52,7 +52,7 @@ test
 |-- cloth
 ```
 
-### Preprocessing
+## Preprocessing
 The VITON-HD dataset serves as a benchmark and provides an agnostic mask. However, you can attempt virtual try-on on **arbitrary images** using segmentation tools like [SAM](https://github.com/facebookresearch/segment-anything). Please note that for densepose, you should use the same densepose model as used in VITON-HD.
 
 ## Inference
@@ -81,4 +81,4 @@ If you find our work useful for your research, please cite us:
 **Acknowledgements** Sunghyun Park is the corresponding author.
 
 ## License
-All material is made available under Creative Commons BY-NC 4.0. You can use, redistribute, and adapt the material for non-commercial purposes, as long as you give appropriate credit by citing our paper and indicate any changes that you've made.
+Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
