@@ -1,10 +1,10 @@
 # StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On
-This repository is the official implementation of [StableVITON](arxiv link)
+This repository is the official implementation of [StableVITON](https://arxiv.org/abs/2312.01725)
 
 > **StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On**<br>
-> [Jeongho Kim](https://scholar.google.co.kr/citations?user=ucoiLHQAAAAJ&hl=ko), [Gyojung Gu](), [Minho Park](https://pmh9960.github.io/), [Sunghyun Park](https://psh01087.github.io/), [Jaegul Choo](https://sites.google.com/site/jaegulchoo/) 
+> [Jeongho Kim](https://scholar.google.co.kr/citations?user=ucoiLHQAAAAJ&hl=ko), [Gyojung Gu](https://www.linkedin.com/in/gyojung-gu-29033118b/), [Minho Park](https://pmh9960.github.io/), [Sunghyun Park](https://psh01087.github.io/), [Jaegul Choo](https://sites.google.com/site/jaegulchoo/) 
 
-[[Arxiv Paper]()]&nbsp;
+[[Arxiv Paper](https://arxiv.org/abs/2312.01725)]&nbsp;
 [[Website Page](https://rlawjdghek.github.io/StableVITON/)]&nbsp;
 
 ![teaser](assets/teaser.png)&nbsp;
@@ -70,10 +70,10 @@ You can also preserve the unmasked region by '--repaint' option.
 ## Citation
 If you find our work useful for your research, please cite us:
 ```
-@artical{wu2023lamp,
-    title={LAMP: Learn a Motion Pattern by Few-Shot Tuning a Text-to-Image Diffusion Model},
-    author={Wu, Ruiqi and Chen, Liangyu and Yang, Tong and Guo, Chunle and Li, Chongyi and Zhang, Xiangyu},
-    journal={arXiv preprint arXiv:2310.10769},
+@artical{kim2023stableviton,
+    title={StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On},
+    author={Jeongho Kim and Gyojung Gu and Minho Park and Sunghyun Park and Jaegul Choo},
+    booktitle={arXiv preprint arxiv:2312.01725},
     year={2023}
 }
 ```
