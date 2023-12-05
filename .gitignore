@@ -1,4 +1,5 @@
 DATA
 *.ckpt
-__pycache__/*
-.vscode/*
+__pycache__/
+.vscode/
+*.pyc
