@@ -72,7 +72,7 @@ If you find our work useful for your research, please cite us:
 ```
 @artical{kim2023stableviton,
     title={StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On},
-    author={Jeongho Kim and Gyojung Gu and Minho Park and Sunghyun Park and Jaegul Choo},
+    author={Kim, Jeongho and Gu, Gyojung and Park, Minho and Park, Sunghyun and Choo, Jaegul},
     booktitle={arXiv preprint arxiv:2312.01725},
     year={2023}
 }
