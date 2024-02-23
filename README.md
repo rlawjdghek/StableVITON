@@ -35,6 +35,7 @@ pip install triton==2.0.0
 pip install open-clip-torch==2.19.0
 pip install diffusers==0.20.2
 pip install scipy==1.10.1
+pip install gradio
 conda install -c anaconda ipython -y
 ```
 
@@ -66,6 +67,18 @@ python inference.py --config_path ./configs/VITON512.yaml --batch_size 4 --model
 
 You can also preserve the unmasked region by '--repaint' option. 
 
+
+## Run App
+
+start gradio server
+
+```bash
+python app.py --config_path ./configs/VITON512.yaml --batch_size 1 --model_load_path <model weight path> --data_root_dir <data root dir> --unpair --repaint --save_dir <save directory>
+```
+
+Use a browser to access [http://127.0.0.1:7860/](http://127.0.0.1:7860/)
+
+![app](assets/app.png)
 
 ## Citation
 If you find our work useful for your research, please cite us:

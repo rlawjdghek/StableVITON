@@ -1,4 +1,5 @@
 from os.path import join as opj
+import time
 
 import cv2
 import numpy as np
@@ -66,6 +67,61 @@ class VITONHDDataset(Dataset):
 
         image = imread(opj(self.drd, self.data_type, "image", self.im_names[idx]), self.img_H, self.img_W)
         image_densepose = imread(opj(self.drd, self.data_type, "image-densepose", self.im_names[idx]), self.img_H, self.img_W)
+        return dict(
+            agn=agn,
+            agn_mask=agn_mask,
+            cloth=cloth,
+            image=image,
+            image_densepose=image_densepose,
+            txt="",
+            img_fn=img_fn,
+            cloth_fn=cloth_fn,
+        )
+
+
+class AppDataset(Dataset):
+    def __init__(
+            self,
+            data_root_dir,
+            img_H,
+            img_W,
+            im_name,
+            cloth,
+            is_paired=True,
+            is_test=False,
+            **kwargs
+    ):
+        self.drd = data_root_dir
+        self.img_H = img_H
+        self.img_W = img_W
+        self.pair_key = "paired" if is_paired else "unpaired"
+        self.data_type = "train" if not is_test else "test"
+        self.is_test = is_test
+
+        assert not (self.data_type == "train" and self.pair_key == "unpaired"), f"train must use paired dataset"
+
+        im_names = [im_name]
+        self.im_names = im_names
+        self.cloth = cloth
+
+
+    def __len__(self):
+        return len(self.im_names)
+
+    def __getitem__(self, idx):
+        img_fn = self.im_names[idx]
+        agn = imread(opj(self.drd, self.data_type, "agnostic-v3.2", self.im_names[idx]), self.img_H, self.img_W)
+        agn_mask = imread(
+            opj(self.drd, self.data_type, "agnostic-mask", self.im_names[idx].replace(".jpg", "_mask.png")),
+            self.img_H, self.img_W, is_mask=True, in_inverse_mask=True)
+
+        image = imread(opj(self.drd, self.data_type, "image", self.im_names[idx]), self.img_H, self.img_W)
+        image_densepose = imread(opj(self.drd, self.data_type, "image-densepose", self.im_names[idx]), self.img_H,
+                                 self.img_W)
+
+        cloth_fn = str(time.time())
+        cloth = imread("", self.img_H, self.img_W, img=self.cloth)
+
         return dict(
             agn=agn,
             agn_mask=agn_mask,
