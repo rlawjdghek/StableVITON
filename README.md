@@ -4,8 +4,8 @@ This repository is the official implementation of [StableVITON](https://arxiv.or
 > **StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On**<br>
 > [Jeongho Kim](https://scholar.google.co.kr/citations?user=ucoiLHQAAAAJ&hl=ko), [Gyojung Gu](https://www.linkedin.com/in/gyojung-gu-29033118b/), [Minho Park](https://pmh9960.github.io/), [Sunghyun Park](https://psh01087.github.io/), [Jaegul Choo](https://sites.google.com/site/jaegulchoo/) 
 
-[[Arxiv Paper](https://arxiv.org/abs/2312.01725)]&nbsp;
-[[Website Page](https://rlawjdghek.github.io/StableVITON/)]&nbsp;
+[[arXiv Paper](https://arxiv.org/abs/2312.01725)]&nbsp;
+[[Project Page](https://rlawjdghek.github.io/StableVITON/)]&nbsp;
 
 ![teaser](assets/teaser.png)&nbsp;
 
