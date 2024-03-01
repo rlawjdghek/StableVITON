@@ -362,10 +362,8 @@ class ControlLDM(LatentDiffusion):
             c_crossattn = self.get_learned_conditioning(c_crossattn)
             c["c_crossattn"] = [c_crossattn]
         uc_cross = self.get_unconditional_conditioning(bs)
-        if self.use_u_cond_cnet:
-            uc_cat = [self.get_unconditional_conditioning_cnet(bs)]
-        else:
-            uc_cat = c["c_concat"]
+
+        uc_cat = c["c_concat"]
         uc_full = {"c_concat": uc_cat, "c_crossattn": [uc_cross]}
         uc_full["first_stage_cond"] = c["first_stage_cond"]
 
