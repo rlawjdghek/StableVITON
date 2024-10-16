@@ -129,11 +129,12 @@ CUDA_VISIBLE_DEVICES=5,6 python train.py \
 ## Citation
 If you find our work useful for your research, please cite us:
 ```
-@artical{kim2023stableviton,
-    title={StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On},
-    author={Kim, Jeongho and Gu, Gyojung and Park, Minho and Park, Sunghyun and Choo, Jaegul},
-    booktitle={arXiv preprint arxiv:2312.01725},
-    year={2023}
+@inproceedings{kim2024stableviton,
+  title={Stableviton: Learning semantic correspondence with latent diffusion model for virtual try-on},
+  author={Kim, Jeongho and Gu, Guojung and Park, Minho and Park, Sunghyun and Choo, Jaegul},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8176--8185},
+  year={2024}
 }
 ```
 
