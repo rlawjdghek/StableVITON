@@ -1,8 +1,6 @@
 # [CVPR2024] StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On 
 ***** New follow-up research by our team is available at https://github.com/rlawjdghek/PromptDresser *****
 
-[<img src="https://api.gitsponsors.com/api/badge/img?id=726350724" height="20">](https://api.gitsponsors.com/api/badge/link?p=ZA4oc7Eu0MYhV2szVwewKf99hIax+VVjuAtolV4GpmR5nr6uBsl5f/RvKIMcbQia)
-
 This repository is the official implementation of [StableVITON](https://arxiv.org/abs/2312.01725)
 
 > **StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On**<br>
