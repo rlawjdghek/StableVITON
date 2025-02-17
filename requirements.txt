@@ -1,0 +1,11 @@
+pytorch-lightning==1.5.0
+einops
+opencv-python==4.7.0.72
+matplotlib
+omegaconf
+albumentations
+transformers==4.33.2
+open-clip-torch==2.19.0
+diffusers==0.20.2
+scipy==1.10.1
+ipython

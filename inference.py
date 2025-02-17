@@ -46,7 +46,7 @@ def main(args):
     load_cp = torch.load(args.model_load_path, map_location="cpu")
     load_cp = load_cp["state_dict"] if "state_dict" in load_cp.keys() else load_cp
     model.load_state_dict(load_cp)
-    model = model.cuda()
+    # model = model.cuda()
     model.eval()
 
     sampler = PLMSSampler(model)
@@ -76,7 +76,7 @@ def main(args):
         uc_full["first_stage_cond"] = c["first_stage_cond"]
         for k, v in batch.items():
             if isinstance(v, torch.Tensor):
-                batch[k] = v.cuda()
+                batch[k] = v
         sampler.model.batch = batch
 
         ts = torch.full((1,), 999, device=z.device, dtype=torch.long)
